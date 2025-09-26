@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güegüe - Login</title>
+    <link rel="stylesheet" href="NicaViva.css">
+</head>
+<body>
+    <div class="login-card">
+        <h2>Güegüe</h2>
+        <form id="login-form">
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit" class="login-btn">Iniciar sesión</button>
+        </form>
+        
+        <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+        
+        <div class="divider">
+            <span class="divider-text">o continúa con</span>
+        </div>
+        
+     <div class="social-icons">
+    <!-- Logo Google -->
+    <div class="social-logo-circle" onclick="handleGoogleLogin()">
+        <img src="c:\Users\USER\OneDrive\Imágenes\google-logo.png" alt="Google">
+    </div>
+         <!-- Logo Facebook -->
+    <div class="social-logo-circle" onclick="handleFacebookLogin()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+    </div>
+             <!-- Logo Apple -->
+    <div class="social-logo-circle" onclick="handleAppleLogin()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+    </div>
+</div>
+        
+     <p class="register-text">¿No tienes cuenta? <a href="#" onclick="mostrarRegistro()">Regístrate aquí</a></p>
+
+<!-- Agregar este modal de registro (antes del </body>) -->
+<div id="modal-registro" class="modal">
+    <div class="modal-content">
+        <h2>Crear Cuenta</h2>
+        <form id="registro-form">
+            <input type="text" placeholder="Nombre de usuario" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            
+            <!-- Solo mostrar esto si es admin registrando a otro admin -->
+            <div id="admin-field" style="display: none;">
+                <label>
+                    <input type="checkbox" id="es-admin"> ¿Es administrador?
+                </label>
+            </div>
+            
+            <button type="submit" class="login-btn">Registrarse</button>
+        </form>
+        <button onclick="cerrarRegistro()">Cancelar</button>
+    </div>
+</div>
+
+    <script src="NicaViva.js"></script>
+</body>
+</html>

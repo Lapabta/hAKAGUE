@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güegüe- Inicio</title>
+    <link rel="stylesheet" href="Styles-home.css">
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo"><img src="logo2.png" alt="logo" style="width: 140px; height: 80px;"></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar historias, tradiciones...">
+                <button>🔍</button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="btn-create">➕ Crear</button>
+            <div class="user-menu">
+                <img src="user-avatar.jpg" alt="Usuario" class="user-avatar">
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <!-- CONTENEDOR PRINCIPAL -->
+<div class="main-container">
+    <aside class="sidebar">
+        <div class="menu-item active" onclick="navegarA('inicio')">🏠 Inicio</div>
+        <div class="menu-item" onclick="navegarA('mapa')">🗺️ Mapa Cultural</div>
+        <div class="menu-item" onclick="navegarA('juegos')">🎮 Juegos Didácticos</div>
+        <div class="menu-item" onclick="navegarA('biblioteca')">📚 Biblioteca</div>
+        <div class="menu-item" onclick="navegarA('eventos')">📅 Eventos</div>
+        <div class="menu-item" onclick="navegarA('comunidad')">👥 Comunidad</div>
+        <div class="menu-item" onclick="navegarA('favoritos')">⭐ Favoritos</div>
+    </aside>
+
+    <!-- FEED CENTRAL (Contenido principal) -->
+    <main class="content-feed">
+        <!-- CREAR NUEVA PUBLICACIÓN -->
+        <div class="create-post">
+            <div class="create-header">
+                <img src="user-avatar.jpg" alt="Usuario" class="user-avatar-small">
+                <input type="text" placeholder="Comparte una vivencia nicaragüense...">
+            </div>
+
+
+
+            <div class="create-options">
+                <button class="option-btn">📷 Foto</button>
+                <button class="option-btn">🎥 Video</button>
+                <button class="option-btn">🎤 Audio</button>
+                <button class="option-btn">📖 Historia</button>
+            </div>
+        </div>
+
+        <!-- PUBLICACIONES (Ejemplos) -->
+        <div class="post">
+            <div class="post-header">
+                <img src="user1.jpg" alt="Usuario" class="user-avatar">
+                <div class="post-user-info">
+                    <div class="user-name">María González</div>
+                    <div class="post-time">Hace 2 horas · 🌋 Masaya</div>
+                </div>
+            </div>
+            
+            <div class="post-content">
+                <p>¡Les comparto esta receta familiar de indio viejo que preparaba mi abuela! 🍲 #TradiciónNicaragüense</p>
+                <img src="comida-tipica.jpg" alt="Comida típica" class="post-image">
+            </div>
+            
+            <div class="post-stats">
+                <span>👍 42 me gusta</span>
+                <span>💬 8 comentarios</span>
+            </div>
+            
+            <div class="post-actions">
+                <button class="action-btn">👍 Me gusta</button>
+                <button class="action-btn">💬 Comentar</button>
+                <button class="action-btn">↗️ Compartir</button>
+            </div>
+        </div>
+
+        <!-- SEGUNDA PUBLICACIÓN (Ejemplo video) -->
+        <div class="post">
+            <div class="post-header">
+                <img src="user2.jpg" alt="Usuario" class="user-avatar">
+                <div class="post-user-info">
+                    <div class="user-name">Carlos Ruiz</div>
+                    <div class="post-time">Ayer · 🎭 Granada</div>
+                </div>
+            </div>
+            
+            <div class="post-content">
+                <p>Video de la tradicional danza del Güegüense en las fiestas patronales! 💃🕺</p>
+                <video controls class="post-video">
+                    <source src="danza-traditional.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="post-stats">
+                <span>👍 87 me gusta</span>
+                <span>💬 15 comentarios</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- SIDEBAR DERECHO (Extra features) -->
+    <aside class="right-sidebar">
+        <!-- EVENTOS PRÓXIMOS -->
+        <div class="widget">
+            <h3>📅 Próximos Eventos</h3>
+            <div class="event-item">
+                <div class="event-date">15 Sep</div>
+                <div class="event-info">
+                    <div class="event-title">Fiesta de San Jerónimo</div>
+                    <div class="event-location">Masaya</div>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-date">20 Sep</div>
+                <div class="event-info">
+                    <div class="event-title">Gritería Chinandegana</div>
+                    <div class="event-location">Chinandega</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JUEGOS DIDÁCTICOS -->
+        <div class="widget">
+            <h3>🎮 Juegos Destacados</h3>
+            <div class="game-item">
+                <div class="game-icon">❓</div>
+                <div class="game-info">
+                    <div class="game-title">Quiz Cultural</div>
+                    <div class="game-stats">Puntuación: 850</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AMIGOS ACTIVOS -->
+        <div class="widget">
+            <h3>👥 Amigos Activos</h3>
+            <div class="active-friend">
+                <img src="user3.jpg" alt="Amigo" class="friend-avatar">
+                <span>Juan Pérez</span>
+            </div>
+        </div>
+    </aside>
+</div>
+
+
+    <script src="scrip_home.js"></script>
+</body>
+</html>
